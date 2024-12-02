@@ -11,7 +11,7 @@ export const minerals = [
     streak: 'سفید',
     specificGravity: '2.65',
     chemicalFormula: 'SiO2',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/1/14/Quartz%2C_Tibet.jpg',
+    image: './images/quartz.png',
     description: 'کوارتز یکی از فراوان‌ترین کانی‌های پوسته زمین است. این کانی در انواع مختلف سنگ‌ها یافت می‌شود و دارای کاربردهای متنوعی در صنعت و جواهرسازی است.'
   },
   {
@@ -26,7 +26,7 @@ export const minerals = [
     streak: 'سفید',
     specificGravity: '2.71',
     chemicalFormula: 'CaCO3',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/Calcite-20188.jpg',
+    image: './images/calcite.webp',  // Updated to local image path
     description: 'کلسیت یکی از کانی‌های اصلی تشکیل دهنده سنگ آهک است. این کانی در صنایع ساختمانی و شیمیایی کاربرد فراوانی دارد.'
   },
   {
@@ -41,7 +41,7 @@ export const minerals = [
     streak: 'سیاه سبز',
     specificGravity: '5.02',
     chemicalFormula: 'FeS2',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/1/1a/Pyrite_-_Huanzala_mine%2C_Huallanca%2C_Bolognesi%2C_Ancash%2C_Peru.jpg',
+    image: './images/pyrite.webp',  // Updated to local image path
     description: 'پیریت به دلیل ظاهر طلایی رنگش به "طلای احمق‌ها" معروف است. این کانی منبع مهمی برای تولید اسید سولفوریک است.'
   },
   {
@@ -56,7 +56,7 @@ export const minerals = [
     streak: 'سیاه',
     specificGravity: '5.18',
     chemicalFormula: 'Fe3O4',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/3/30/Magnetite-118736.jpg',
+    image: './images/magnetite.webp',  // Updated to local image path
     description: 'مگنتیت یک کانی مغناطیسی است که به عنوان سنگ معدن آهن استخراج می‌شود. این کانی در صنایع فولادسازی اهمیت زیادی دارد.'
   },
   {
@@ -71,23 +71,82 @@ export const minerals = [
     streak: 'قرمز قهوه‌ای',
     specificGravity: '5.26',
     chemicalFormula: 'Fe2O3',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/3/39/Hematite-284714.jpg',
+    image: './images/hematite.webp',  // Updated to local image path
     description: 'هماتیت یکی از مهم‌ترین سنگ‌های معدن آهن است. این کانی در ساخت رنگدانه‌های قرمز نیز کاربرد دارد.'
   },
-  { id: 6, name: 'گالن', color: 'نقره‌ای خاکستری', hardness: 2.5, crystalSystem: 'مکعبی', cleavage: 'کامل در سه جهت', fracture: 'ناهموار', luster: 'فلزی', streak: 'خاکستری', specificGravity: '7.5', chemicalFormula: 'PbS', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Galena_crystals.jpg/800px-Galena_crystals.jpg', description: 'گالن مهمترین سنگ معدن سرب است.' },
-  { id: 7, name: 'اسفالریت', color: 'زرد تا قهوه‌ای', hardness: 3.5, crystalSystem: 'مکعبی', cleavage: 'کامل در شش جهت', fracture: 'ناهموار', luster: 'چرب', streak: 'قهوه‌ای', specificGravity: '4', chemicalFormula: 'ZnS', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Sphalerite_crystals.jpg/800px-Sphalerite_crystals.jpg', description: 'اسفالریت مهمترین سنگ معدن روی است.' },
-  { id: 8, name: 'باریت', color: 'سفید تا آبی روشن', hardness: 3, crystalSystem: 'ارتورومبیک', cleavage: 'کامل در سه جهت', fracture: 'ناهموار', luster: 'شیشه‌ای', streak: 'سفید', specificGravity: '4.5', chemicalFormula: 'BaSO4', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Barite_crystals.jpg/800px-Barite_crystals.jpg', description: 'باریت در صنایع نفت و گاز کاربرد دارد.' },
-  { id: 9, name: 'فلوریت', color: 'بنفش تا سبز', hardness: 4, crystalSystem: 'مکعبی', cleavage: 'کامل در چهار جهت', fracture: 'ناهموار', luster: 'شیشه‌ای', streak: 'سفید', specificGravity: '3.2', chemicalFormula: 'CaF2', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fluorite_crystals.jpg/800px-Fluorite_crystals.jpg', description: 'فلوریت در صنایع شیمیایی و متالورژی کاربرد دارد.' },
-  { id: 10, name: 'مالاکیت', color: 'سبز', hardness: 3.5, crystalSystem: 'مونوکلینیک', cleavage: 'کامل در یک جهت', fracture: 'ناهموار', luster: 'چرب', streak: 'سبز روشن', specificGravity: '4', chemicalFormula: 'Cu2CO3(OH)2', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Malachite_crystals.jpg/800px-Malachite_crystals.jpg', description: 'مالاکیت یک کانی مس است که به عنوان سنگ زینتی استفاده می‌شود.' },
-  { id: 11, name: 'آزوریت', color: 'آبی', hardness: 3.5, crystalSystem: 'مونوکلینیک', cleavage: 'کامل در دو جهت', fracture: 'ناهموار', luster: 'شیشه‌ای', streak: 'آبی روشن', specificGravity: '3.8', chemicalFormula: 'Cu3(CO3)2(OH)2', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Azurite_crystals.jpg/800px-Azurite_crystals.jpg', description: 'آزوریت یک کانی مس است که به عنوان سنگ زینتی استفاده می‌شود.' },
-  { id: 12, name: 'تالک', color: 'سفید تا سبز روشن', hardness: 1, crystalSystem: 'مونوکلینیک', cleavage: 'کامل در یک جهت', fracture: 'ناهموار', luster: 'چرب', streak: 'سفید', specificGravity: '2.7', chemicalFormula: 'Mg3Si4O10(OH)2', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Talc_crystals.jpg/800px-Talc_crystals.jpg', description: 'تالک در صنایع آرایشی و بهداشتی کاربرد دارد.' },
-  { id: 13, name: 'گچ', color: 'سفید', hardness: 2, crystalSystem: 'مونوکلینیک', cleavage: 'کامل در یک جهت', fracture: 'ناهموار', luster: 'شیشه‌ای', streak: 'سفید', specificGravity: '2.3', chemicalFormula: 'CaSO4·2H2O', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Gypsum_crystals.jpg/800px-Gypsum_crystals.jpg', description: 'گچ در صنایع ساختمانی کاربرد دارد.' },
-  { id: 14, name: 'آپاتیت', color: 'سبز تا قهوه‌ای', hardness: 5, crystalSystem: 'شش وجهی', cleavage: 'ندارد', fracture: 'ناهموار', luster: 'شیشه‌ای', streak: 'سفید', specificGravity: '3.2', chemicalFormula: 'Ca5(PO4)3(OH,Cl,F)', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Apatite_crystals.jpg/800px-Apatite_crystals.jpg', description: 'آپاتیت در صنایع شیمیایی و کشاورزی کاربرد دارد.' },
-  { id: 15, name: 'تورمالین', color: 'سیاه تا صورتی', hardness: 7, crystalSystem: 'شش وجهی', cleavage: 'ندارد', fracture: 'ناهموار', luster: 'شیشه‌ای', streak: 'سفید', specificGravity: '3', chemicalFormula: 'XY3Z6(BO3)3Si6O18(OH,F)4', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Tourmaline_crystals.jpg/800px-Tourmaline_crystals.jpg', description: 'تورمالین به عنوان سنگ زینتی استفاده می‌شود.' },
-  { id: 16, name: 'گارنت', color: 'قرمز تا قهوه‌ای', hardness: 6.5, crystalSystem: 'مکعبی', cleavage: 'ندارد', fracture: 'ناهموار', luster: 'شیشه‌ای', streak: 'سفید', specificGravity: '3.5', chemicalFormula: 'X3Y2(SiO4)3', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Garnet_crystals.jpg/800px-Garnet_crystals.jpg', description: 'گارنت به عنوان سنگ زینتی و در صنایع ساینده کاربرد دارد.' },
-  { id: 17, name: 'الیوین', color: 'سبز زیتونی', hardness: 6.5, crystalSystem: 'ارتورومبیک', cleavage: 'ندارد', fracture: 'ناهموار', luster: 'شیشه‌ای', streak: 'سفید', specificGravity: '3.3', chemicalFormula: '(Mg,Fe)2SiO4', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Olivine_crystals.jpg/800px-Olivine_crystals.jpg', description: 'الیوین در سنگ‌های آذرین یافت می‌شود.' },
-  { id: 18, name: 'پیروکسن', color: 'سبز تیره تا سیاه', hardness: 5.5, crystalSystem: 'مونوکلینیک', cleavage: 'کامل در دو جهت', fracture: 'ناهموار', luster: 'شیشه‌ای', streak: 'سفید', specificGravity: '3.2', chemicalFormula: '(Ca,Na)(Mg,Fe,Al)(Si,Al)2O6', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Pyroxene_crystals.jpg/800px-Pyroxene_crystals.jpg', description: 'پیروکسن در سنگ‌های آذرین و دگرگونی یافت می‌شود.' },
-  { id: 19, name: 'آمفیبول', color: 'سبز تیره تا سیاه', hardness: 5.5, crystalSystem: 'مونوکلینیک', cleavage: 'کامل در دو جهت', fracture: 'ناهموار', luster: 'شیشه‌ای', streak: 'سفید', specificGravity: '3', chemicalFormula: 'Ca2(Mg,Fe)5Si8O22(OH)2', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Amphibole_crystals.jpg/800px-Amphibole_crystals.jpg', description: 'آمفیبول در سنگ‌های آذرین و دگرگونی یافت می‌شود.' },
-  { id: 20, name: 'میکا', color: 'سفید تا قهوه‌ای', hardness: 2.5, crystalSystem: 'مونوکلینیک', cleavage: 'کامل در یک جهت', fracture: 'ناهموار', luster: 'چرب', streak: 'سفید', specificGravity: '2.8', chemicalFormula: 'KAl2(AlSi3O10)(F,OH)2', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Mica_crystals.jpg/800px-Mica_crystals.jpg', description: 'میکا در سنگ‌های آذرین و دگرگونی یافت می‌شود.' },
-]
-
+  {
+    id: 6,
+    name: 'گالن',
+    color: 'نقره‌ای خاکستری',
+    hardness: 2.5,
+    crystalSystem: 'مکعبی',
+    cleavage: 'کامل در سه جهت',
+    fracture: 'ناهموار',
+    luster: 'فلزی',
+    streak: 'خاکستری',
+    specificGravity: '7.5',
+    chemicalFormula: 'PbS',
+    image: './images/galena.png',  // Updated to local image path
+    description: 'گالن مهمترین سنگ معدن سرب است.'
+  },
+  {
+    id: 7,
+    name: 'اسفالریت',
+    color: 'زرد تا قهوه‌ای',
+    hardness: 3.5,
+    crystalSystem: 'مکعبی',
+    cleavage: 'کامل در شش جهت',
+    fracture: 'ناهموار',
+    luster: 'چرب',
+    streak: 'قهوه‌ای',
+    specificGravity: '4',
+    chemicalFormula: 'ZnS',
+    image: './images/sphalerite.webp',  // Updated to local image path
+    description: 'اسفالریت مهمترین سنگ معدن روی است.'
+  },
+  {
+    id: 8,
+    name: 'باریت',
+    color: 'سفید تا آبی روشن',
+    hardness: 3,
+    crystalSystem: 'ارتورومبیک',
+    cleavage: 'کامل در سه جهت',
+    fracture: 'ناهموار',
+    luster: 'شیشه‌ای',
+    streak: 'سفید',
+    specificGravity: '4.5',
+    chemicalFormula: 'BaSO4',
+    image: './images/barite.png',  // Updated to local image path
+    description: 'باریت در صنایع نفت و گاز کاربرد دارد.'
+  },
+  {
+    id: 9,
+    name: 'فلوریت',
+    color: 'بنفش تا سبز',
+    hardness: 4,
+    crystalSystem: 'مکعبی',
+    cleavage: 'کامل در چهار جهت',
+    fracture: 'ناهموار',
+    luster: 'شیشه‌ای',
+    streak: 'سفید',
+    specificGravity: '3.2',
+    chemicalFormula: 'CaF2',
+    image: './images/fluorite.png',  // Updated to local image path
+    description: 'فلوریت در صنایع شیمیایی و متالورژی کاربرد دارد.'
+  },
+  {
+    id: 10,
+    name: 'مالاکیت',
+    color: 'سبز',
+    hardness: 3.5,
+    crystalSystem: 'مونوکلینیک',
+    cleavage: 'کامل در یک جهت',
+    fracture: 'ناهموار',
+    luster: 'چرب',
+    streak: 'سبز روشن',
+    specificGravity: '4',
+    chemicalFormula: 'Cu2CO3(OH)2',
+    image: './images/malachite.png',  // Updated to local image path
+    description: 'مالاکیت یک کانی مس است که به عنوان سنگ زینتی استفاده می‌شود.'
+  },
+];

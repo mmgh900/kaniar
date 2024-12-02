@@ -6,7 +6,7 @@ import Link from 'next/link'
 // This is a dummy result. In a real application, this would be determined by the backend based on the user's answers.
 const identificationResult = {
   name: 'کوارتز',
-  image: '/quartz.jpg',
+  image: '/images/quartz.png',
   properties: {
     color: 'شفاف تا سفید',
     hardness: 7,

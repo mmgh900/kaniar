@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { RiHome5Line, RiSearch2Line, RiBookmarkLine, RiUser3Line, RiSettings5Line, RiEyeLine } from 'react-icons/ri'
@@ -9,8 +10,8 @@ export function BottomNavigation() {
     { icon: RiHome5Line, href: '/', label: 'خانه' },
     { icon: RiSearch2Line, href: '/mineral-list', label: 'جستجو' },
     { icon: RiEyeLine, href: '/identify', label: 'شناسایی کانی' },
-    { icon: RiBookmarkLine, href: '/favorites', label: 'علاقه‌مندی‌ها' },
-    { icon: RiUser3Line, href: '/profile', label: 'پروفایل' },
+    //{ icon: RiBookmarkLine, href: '/favorites', label: 'علاقه‌مندی‌ها' },
+    //{ icon: RiUser3Line, href: '/profile', label: 'پروفایل' },
   ]
 
   return (

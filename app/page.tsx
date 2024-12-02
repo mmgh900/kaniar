@@ -14,7 +14,7 @@ export default function Home() {
       <div className="w-full">
         <div className="text-center mb-8 pt-8">
           <Image
-            src="https://i.postimg.cc/nzzwmBfb/DALL-E-2024-12-02-15-47-28-A-logo-concept-for-a-brand-named-Kaniyab-inspired-by-the-beauty-of-E.webp"
+            src="/images/kaniar-logo.png"
             alt="لوگوی کانیار"
             width={200}
             height={200}
